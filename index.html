@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <div id="main">
+      <div class="bg-color"></div>
+      <div id="form">
+        <div class="container">
+          <h1 id="title">Survey Form</h1>
+          <p id="description">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas
+            et fugit explicabo sit assumenda saepe eaque id nam aperiam debitis!
+            Amet ex commodi tempore sunt at quam adipisci numquam accusamus
+          </p>
+          <form id="survey-form">
+            <label class="label-bio" for="name">Name</label>
+            <input
+              class="bio"
+              type="text"
+              id="name"
+              placeholder="Enter your name"
+              required
+            />
+
+            <label class="label-bio" for="email">Email</label>
+            <input
+              class="bio"
+              type="email"
+              id="email"
+              placeholder="Enter your Email"
+              required
+            />
+
+            <label class="label-bio" for="number">Number</label>
+            <input
+              class="bio"
+              type="number"
+              id="number"
+              placeholder="Enter phone number"
+              required
+              min="10"
+              max="99"
+            />
+
+            <label for="dropdown" id="label-select">Qualification</label>
+            <select name="Qualification" id="dropdown">
+              <option disabled></option>
+              <option>Matric</option>
+              <option>Intermediate</option>
+              <option>Graduation</option>
+            </select>
+            <div id="radio-inputs">
+              <label for="radio" id="label-radio"
+                >Are you capable of doing webdesigns?</label
+              >
+              <label for=""
+                ><input
+                  type="radio"
+                  name="user-recommended"
+                  class="radio-input"
+                />Yes</label
+              >
+              <label>
+                <input
+                  type="radio"
+                  name="user-recommended"
+                  class="radio-input"
+                />No</label
+              >
+              <label>
+                <input
+                  type="radio"
+                  name="user-recommended"
+                  class="radio-input"
+                />Not Sure.</label
+              >
+            </div>
+
+            <label id="label-checkbox">What can you do?</label>
+            <label>
+              <input
+                type="checkbox"
+                value="front-end"
+                class="checkbox-input"
+              />UI</label
+            >
+            <label>
+              <input
+                type="checkbox"
+                value="front-end"
+                class="checkbox-input"
+              />Back-End</label
+            >
+            <label>
+              <input
+                type="checkbox"
+                value="front-end"
+                class="checkbox-input"
+              />Database</label
+            >
+            <label>
+              <input
+                type="checkbox"
+                value="front-end"
+                class="checkbox-input"
+              />Debugging</label
+            >
+
+            <label id="label-addInfo"
+              >Additional information(Not recommended)</label
+            >
+            <textarea
+              name="add-info"
+              id="add-info"
+              cols="30"
+              rows="10"
+              placeholder="Type Here..."
+            ></textarea>
+
+            <button id="submit" type="submit" class="submit-button">
+              Submit
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
